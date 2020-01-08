@@ -81,7 +81,7 @@ public class BrowserTest {
 		Thread.sleep(500); // IT IS BAD. NEVER DO THIS
 
 		// Check if the URL of Laval university is really presented
-		WebElement vLink = mDriver.findElement(By.xpath("//a[@href='http://www.iut-laval.univ-lemans.fr/']"));
+		WebElement vLink = mDriver.findElement(By.xpath("//a[@href='http://iut-laval.univ-lemans.fr/']"));
 
 		Thread.sleep(500); // IT IS BAD. NEVER DO THIS
 
@@ -100,7 +100,7 @@ public class BrowserTest {
 		String vCurrentURL = mDriver.getCurrentUrl();
 
 		// Check the current URL
-		assertEquals("http://www.iut-laval.univ-lemans.fr/fr/index.html", vCurrentURL);
+		assertEquals("http://iut-laval.univ-lemans.fr/fr/index.html", vCurrentURL);
 	}
 
 	/**
